@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
 	font-family: '"NeutraDisp-Medium", Arial, Helvetica, sans-serif';
 	src: url('https://mage.umaoils.com/public_html/mage/shop/homepage/fonts/NeutraDisp-Medium.eot');
 	src: url('https://mage.umaoils.com/public_html/mage/shop/homepage/fonts/NeutraDisp-Medium.eot?#iefix') format('embedded-opentype'),
@@ -86,6 +86,8 @@ div.slider.homeslides ul.indicators .indicator-item{
 
 div.carousel{
 	overflow: visible !important;
+	height: 530px !important;
+
 }
 
 div.carousel p{
@@ -101,10 +103,30 @@ h6{
 	font-family: Libre Baskerville;
 }
 
-#featured-image{
+/*#featured-image{
 	width: 100%;
 	height: auto;
+}*/
+
+.parallax-container .parallax img{
+	min-height: auto !important;
 }
+
+.parallax-container {
+	min-height: 40em;
+    height: auto;
+}
+
+.carousel .carousel-item{
+	margin-top: -100px !important;
+	margin-top: -50px !important;
+}
+
+/*.parallax img{
+	@media #{$small-and-down} { max-width: 200%; }
+    @media #{$medium-and-up} { width: 100%; }
+    width: 100%;
+}*/
 
 /*.carousel-item div{
 	background-color: white !important;
@@ -113,3 +135,23 @@ h6{
 /*a.carousel-item.active p{
 	background-color: white !important;
 }*/
+
+.card-content h3{
+/*	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+*/	font-family: Libre Baskerville;	
+	text-transform: uppercase;
+	/*	font-style: italic;
+	*/	font-size:3em;
+}
+
+.card-content h6{
+/*	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+*/	font-family: Libre Baskerville;	
+	font-style: italic;
+}
+
+.card.horizontal{
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+
+}
